@@ -3,9 +3,9 @@ const bot = new Discord.Client();
 
 const token = 'NjEzMzc5MjAxMzE5MzA1MjM2.XVwECQ.eMkvcnJGeIrfxl7ACfBlJ2WFz4k';
 
-bot.on('ready', () =>{
-    console.log('this bot is online')
-})
+bot.on('ready', () => {
+    console.log('I am ready!');
+});
 
 
 
@@ -38,4 +38,4 @@ bot.on('message', msg=>{
                 msg.reply('שליו צור המלך');
                 }
                 })
-bot.login(token);
+client.login(process.env.BOT_TOKEN);
